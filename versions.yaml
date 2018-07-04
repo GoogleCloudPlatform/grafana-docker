@@ -19,12 +19,27 @@ versions:
   - dir: '5/debian9/5.1'
     repo: grafana5
     tags:
-      - '5.1.3'
+      - '5.1.5'
       - '5.1'
       - '5'
+      - '5.1.5-debian9'
+      - '5.1-debian9'
+      - '5-debian9'
       - 'latest'
     from: *from
     packages:
       grafana:
-        version: '5.1.3'
-        sha256: '86605013e69ed47bb4a8ee1e2420373edee23a94885c07988152c36fe5ed2d8c'
+        version: '5.1.5'
+        sha256: 'a1ba9d04de216e2b54f304a261ec898efdd411a79c9c3acd2913397d7a5cd348'
+  - dir: '5/debian9/5.0'
+    repo: grafana5
+    tags:
+      - '5.0.4'
+      - '5.0'
+      - '5.0.4-debian9'
+      - '5.0-debian9'
+    from: *from
+    packages:
+      grafana:
+        version: '5.0.4'
+        sha256: '4c8b94698b61d48d089d3027f3e322cc41201b848ac705ed7940b76191c3b775'
