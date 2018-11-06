@@ -16,16 +16,28 @@ _variables:
   from: &from gcr.io/google-appengine/debian9
 
 versions:
+  - dir: '5/debian9/5.3'
+    repo: grafana5
+    tags:
+      - '5.3.2'
+      - '5.3'
+      - '5'
+      - '5.3.2-debian9'
+      - '5.3-debian9'
+      - '5-debian9'
+      - 'latest'
+    from: *from
+    packages:
+      grafana:
+        version: '5.3.2'
+        sha256: 'f02bc8e0f70377b6447745c54405cd4e276a59a8093d465950adf396a990f918'
   - dir: '5/debian9/5.2'
     repo: grafana5
     tags:
       - '5.2.4'
       - '5.2'
-      - '5'
       - '5.2.4-debian9'
       - '5.2-debian9'
-      - '5-debian9'
-      - 'latest'
     from: *from
     packages:
       grafana:
