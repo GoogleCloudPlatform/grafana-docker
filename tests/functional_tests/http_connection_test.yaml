@@ -35,4 +35,10 @@ tests:
   expect:
     stdout:
       matches: "{\"id\":1,\"name\":\"Main Org.\",.*}"
-
+- name: Prometheus metrics
+  command:
+    - curl
+    - http://some-grafana-$UNIQUE-id:3000/metrics
+  expect:
+    stdout:
+      matches: '(?m)^# HELP go_gc_duration_seconds A summary of the GC invocation durations.$'
