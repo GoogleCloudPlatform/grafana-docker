@@ -35,4 +35,10 @@ tests:
   expect:
     stdout:
       matches: "{\"id\":1,\"name\":\"Main Org.\",.*}"
-
+- name: Prometheus metrics
+  command:
+    - curl
+    - http://some-grafana-$UNIQUE-id:3000/metrics
+  expect:
+    stdout:
+      matches: '(?m)^grafana_instance_start_total 1$'
