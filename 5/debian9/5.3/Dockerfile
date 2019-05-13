@@ -1,7 +1,7 @@
 FROM gcr.io/google-appengine/debian9
 ENV GRAFANA_VERSION 5.3.4
 ENV GRAFANA_SHA256 3bab82abf0b7abd2829e9f4f81296708755f752e88bda472a5c8406dad6d5619
-ARG GRAFANA_URL="https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-$GRAFANA_VERSION.linux-amd64.tar.gz"
+ARG GRAFANA_URL="https://dl.grafana.com/oss/release/grafana-$GRAFANA_VERSION.linux-amd64.tar.gz"
 ARG GF_UID="472"
 ARG GF_GID="472"
 
