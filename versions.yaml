@@ -1,10 +1,10 @@
-# Copyright 2018 Google LLC
+# Copyright 2020 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+#     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,97 +12,50 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_variables:
-  from: &from gcr.io/google-appengine/debian9
 
+cloudbuild:
+  enable_parallel: false
 versions:
-  - dir: '6/debian9/6.5'
-    repo: grafana6
-    tags:
-      - '6.5.3'
-      - '6.5'
-      - '6'
-      - '6.5.3-debian9'
-      - '6.5-debian9'
-      - '6-debian9'
-      - 'latest'
-    from: *from
-    packages:
-      grafana:
-        version: '6.5.3'
-        sha256: '02fe78f1d6842e043ca61a64272dd7dfdb4103486f163501b08a923f0f0452be'
-  - dir: '6/debian9/6.0'
-    repo: grafana6
-    tags:
-      - '6.0.2'
-      - '6.0'
-      - '6.0.2-debian9'
-      - '6.0-debian9'
-    from: *from
-    packages:
-      grafana:
-        version: '6.0.2'
-        sha256: '3499090a0b828f29e8243f3efe21d8c037e6b58be006d63326fa6c79a2686cd3'
-  - dir: '5/debian9/5.4'
-    repo: grafana5
-    tags:
-      - '5.4.5'
-      - '5.4'
-      - '5'
-      - '5.4.5-debian9'
-      - '5.4-debian9'
-      - '5-debian9'
-      - 'latest'
-    from: *from
-    packages:
-      grafana:
-        version: '5.4.5'
-        sha256: '89c4f576114179617060c977afcf69a71228d9f389bbc89c4913754133c4736f'
-  - dir: '5/debian9/5.3'
-    repo: grafana5
-    tags:
-      - '5.3.4'
-      - '5.3'
-      - '5.3.4-debian9'
-      - '5.3-debian9'
-    from: *from
-    packages:
-      grafana:
-        version: '5.3.4'
-        sha256: '3bab82abf0b7abd2829e9f4f81296708755f752e88bda472a5c8406dad6d5619'
-  - dir: '5/debian9/5.2'
-    repo: grafana5
-    tags:
-      - '5.2.4'
-      - '5.2'
-      - '5.2.4-debian9'
-      - '5.2-debian9'
-    from: *from
-    packages:
-      grafana:
-        version: '5.2.4'
-        sha256: '8e8a4d24d63c830f95e34ddd3b6459e39998a170b6dfd4d97ce1870f95c4eda0'
-  - dir: '5/debian9/5.1'
-    repo: grafana5
-    tags:
-      - '5.1.5'
-      - '5.1'
-      - '5.1.5-debian9'
-      - '5.1-debian9'
-    from: *from
-    packages:
-      grafana:
-        version: '5.1.5'
-        sha256: 'a1ba9d04de216e2b54f304a261ec898efdd411a79c9c3acd2913397d7a5cd348'
-  - dir: '5/debian9/5.0'
-    repo: grafana5
-    tags:
-      - '5.0.4'
-      - '5.0'
-      - '5.0.4-debian9'
-      - '5.0-debian9'
-    from: *from
-    packages:
-      grafana:
-        version: '5.0.4'
-        sha256: '4c8b94698b61d48d089d3027f3e322cc41201b848ac705ed7940b76191c3b775'
+- dir: 6/debian9/6.6
+  from: gcr.io/google-appengine/debian9
+  packages:
+    grafana:
+      sha256: e21904755578e7342446971b913da83e90a896b18d53ad01bd63f9b7d714e9f6
+      version: 6.6.0
+  repo: grafana6
+  tags:
+  - 6.6.0-debian9
+  - 6.6-debian9
+  - 6-debian9
+  - 6.6.0
+  - '6.6'
+  - '6'
+  - latest
+- dir: 6/debian9/6.5
+  from: gcr.io/google-appengine/debian9
+  packages:
+    grafana:
+      sha256: 02fe78f1d6842e043ca61a64272dd7dfdb4103486f163501b08a923f0f0452be
+      version: 6.5.3
+  repo: grafana6
+  tags:
+  - 6.5.3-debian9
+  - 6.5-debian9
+  - 6.5.3
+  - '6.5'
+- dir: 5/debian9/5.4
+  from: gcr.io/google-appengine/debian9
+  packages:
+    grafana:
+      sha256: 89c4f576114179617060c977afcf69a71228d9f389bbc89c4913754133c4736f
+      version: 5.4.5
+  repo: grafana5
+  tags:
+  - 5.4.5-debian9
+  - 5.4-debian9
+  - 5-debian9
+  - 5.4.5
+  - '5.4'
+  - '5'
+  - latest
+
