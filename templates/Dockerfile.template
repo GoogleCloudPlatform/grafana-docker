@@ -6,11 +6,7 @@ ENV GRAFANA_SHA256 {{ $grafana.Sha256 }}
 
 ENV C2D_RELEASE=${GRAFANA_VERSION}
 
-{{- if or (eq $grafana.Version "5.1.5") (eq $grafana.Version "5.0.4") }}
-ARG GRAFANA_URL="https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-$GRAFANA_VERSION.linux-x64.tar.gz"
-{{- else}}
 ARG GRAFANA_URL="https://dl.grafana.com/oss/release/grafana-$GRAFANA_VERSION.linux-amd64.tar.gz"
-{{- end}}
 ARG GF_UID="472"
 ARG GF_GID="472"
 
