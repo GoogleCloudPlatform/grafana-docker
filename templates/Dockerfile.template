@@ -4,7 +4,7 @@ FROM {{ .From }}
 ENV GRAFANA_VERSION {{ $grafana.Version }}
 ENV GRAFANA_SHA256 {{ $grafana.Sha256 }}
 
-ENV C2D_RELEASE=${GRAFANA_VERSION}
+ENV C2D_RELEASE {{ $grafana.Version }}
 
 ARG GRAFANA_URL="https://dl.grafana.com/oss/release/grafana-$GRAFANA_VERSION.linux-amd64.tar.gz"
 ARG GF_UID="472"
