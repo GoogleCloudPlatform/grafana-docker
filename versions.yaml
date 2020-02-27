@@ -20,14 +20,14 @@ versions:
   from: gcr.io/google-appengine/debian9
   packages:
     grafana:
-      sha256: 0edc8207e356ef66eb7b1c78a1cdabc2cd5c0655de774000de2ad0397e543377
-      version: 6.6.1
+      sha256: 5473cdf53cf55ae1264dd44bfe1b519dc22d5cabb25b767d3a5324cf4e9591de
+      version: 6.6.2
   repo: grafana6
   tags:
-  - 6.6.1-debian9
+  - 6.6.2-debian9
   - 6.6-debian9
   - 6-debian9
-  - 6.6.1
+  - 6.6.2
   - '6.6'
   - '6'
   - latest
