@@ -1,4 +1,4 @@
-FROM gcr.io/google-appengine/debian9
+FROM marketplace.gcr.io/google/debian9
 ENV GRAFANA_VERSION 6.5.3
 ENV GRAFANA_SHA256 02fe78f1d6842e043ca61a64272dd7dfdb4103486f163501b08a923f0f0452be
 
