@@ -16,8 +16,23 @@
 cloudbuild:
   enable_parallel: false
 versions:
+- dir: 7/debian9/7.0
+  from: marketplace.gcr.io/google/debian9
+  packages:
+    grafana:
+      sha256: eb2ad26dd832515cfac9c4a76096a1a656eee9794c874669f552810280ef046f
+      version: 7.0.1
+  repo: grafana7
+  tags:
+  - 7.0.1-debian9
+  - 7.0-debian9
+  - 7-debian9
+  - 7.0.1
+  - '7.0'
+  - '7'
+  - latest
 - dir: 6/debian9/6.7
-  from: gcr.io/google-appengine/debian9
+  from: marketplace.gcr.io/google/debian9
   packages:
     grafana:
       sha256: 799283bae5f964c92082ea63db7e497193ea7e9fc8282c3f836d85cf0c04079e
@@ -32,7 +47,7 @@ versions:
   - '6'
   - latest
 - dir: 6/debian9/6.5
-  from: gcr.io/google-appengine/debian9
+  from: marketplace.gcr.io/google/debian9
   packages:
     grafana:
       sha256: 02fe78f1d6842e043ca61a64272dd7dfdb4103486f163501b08a923f0f0452be
@@ -44,7 +59,7 @@ versions:
   - 6.5.3
   - '6.5'
 - dir: 5/debian9/5.4
-  from: gcr.io/google-appengine/debian9
+  from: marketplace.gcr.io/google/debian9
   packages:
     grafana:
       sha256: 89c4f576114179617060c977afcf69a71228d9f389bbc89c4913754133c4736f
