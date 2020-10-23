@@ -20,14 +20,14 @@ versions:
   from: marketplace.gcr.io/google/debian9
   packages:
     grafana:
-      sha256: 99c70bf87d094b13e51d1ec52b28dea49e23064e9b94acc6819f4fc212d17e96
-      version: 7.2.1
+      sha256: 7e221c571813bbf41b0db595ca93d36d30ef72e9857ad5b8724325e42c2f4e0e
+      version: 7.2.2
   repo: grafana7
   tags:
-  - 7.2.1-debian9
+  - 7.2.2-debian9
   - 7.2-debian9
   - 7-debian9
-  - 7.2.1
+  - 7.2.2
   - '7.2'
   - '7'
   - latest
