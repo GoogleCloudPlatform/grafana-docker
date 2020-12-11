@@ -1,8 +1,8 @@
 FROM marketplace.gcr.io/google/debian9
-ENV GRAFANA_VERSION 7.3.4
-ENV GRAFANA_SHA256 9343b2b7c8784fa7ac62f03137bcf05f114bef404d2d57dc6f5cbcb61cd3aeba
+ENV GRAFANA_VERSION 7.3.5
+ENV GRAFANA_SHA256 033bf491d854fd014e60b58573bacdb27ff5c20baf4f642e1ec4f42c8bfcf46e
 
-ENV C2D_RELEASE 7.3.4
+ENV C2D_RELEASE 7.3.5
 
 ARG GRAFANA_URL="https://dl.grafana.com/oss/release/grafana-$GRAFANA_VERSION.linux-amd64.tar.gz"
 ARG GF_UID="472"
