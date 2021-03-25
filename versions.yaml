@@ -20,14 +20,14 @@ versions:
   from: marketplace.gcr.io/google/debian9
   packages:
     grafana:
-      sha256: 89d6c6f8af4d567361101d1fec37cfee26849c731fe7d89e42d627993e82bd53
-      version: 7.4.3
+      sha256: 9fff20effd682f3212e1a8ee21f46cbe535ab7a2f819cb4c36969dc1f9e832f5
+      version: 7.4.5
   repo: grafana7
   tags:
-  - 7.4.3-debian9
+  - 7.4.5-debian9
   - 7.4-debian9
   - 7-debian9
-  - 7.4.3
+  - 7.4.5
   - '7.4'
   - '7'
   - latest
@@ -35,26 +35,26 @@ versions:
   from: marketplace.gcr.io/google/debian9
   packages:
     grafana:
-      sha256: f761a69dbd79744bf0557252d7163b9f42ea24c050206a3995a9bd27d54b5914
-      version: 7.3.7
+      sha256: 7502fc2cfdafa776fbb43dcc52a6ba7b3fe12bf50da22268056a77665825064b
+      version: 7.3.10
   repo: grafana7
   tags:
-  - 7.3.7-debian9
+  - 7.3.10-debian9
   - 7.3-debian9
-  - 7.3.7
+  - 7.3.10
   - '7.3'
 - dir: 6/debian9/6.7
   from: marketplace.gcr.io/google/debian9
   packages:
     grafana:
-      sha256: 454f23be261289e114516cfea14c2e2980fd1b432bea499256ae920ccc4c528d
-      version: 6.7.4
+      sha256: 22f57fe189303a0c0fe89f64b0d57634a79702bd811415b724d61fc9b2365361
+      version: 6.7.6
   repo: grafana6
   tags:
-  - 6.7.4-debian9
+  - 6.7.6-debian9
   - 6.7-debian9
   - 6-debian9
-  - 6.7.4
+  - 6.7.6
   - '6.7'
   - '6'
   - latest
