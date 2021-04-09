@@ -1,4 +1,4 @@
-# Copyright 2020 Google LLC
+# Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,6 +16,21 @@
 cloudbuild:
   enable_parallel: false
 versions:
+- dir: 7/debian9/7.5
+  from: marketplace.gcr.io/google/debian9
+  packages:
+    grafana:
+      sha256: 2795a3ef4c504f334e4920f5a5ceb1f2ee067a0f819ea6a93b81223e7cb287fe
+      version: 7.5.3
+  repo: grafana7
+  tags:
+  - 7.5.3-debian9
+  - 7.5-debian9
+  - 7-debian9
+  - 7.5.3
+  - '7.5'
+  - '7'
+  - latest
 - dir: 7/debian9/7.4
   from: marketplace.gcr.io/google/debian9
   packages:
@@ -26,51 +41,5 @@ versions:
   tags:
   - 7.4.5-debian9
   - 7.4-debian9
-  - 7-debian9
   - 7.4.5
   - '7.4'
-  - '7'
-  - latest
-- dir: 7/debian9/7.3
-  from: marketplace.gcr.io/google/debian9
-  packages:
-    grafana:
-      sha256: 7502fc2cfdafa776fbb43dcc52a6ba7b3fe12bf50da22268056a77665825064b
-      version: 7.3.10
-  repo: grafana7
-  tags:
-  - 7.3.10-debian9
-  - 7.3-debian9
-  - 7.3.10
-  - '7.3'
-- dir: 6/debian9/6.7
-  from: marketplace.gcr.io/google/debian9
-  packages:
-    grafana:
-      sha256: 22f57fe189303a0c0fe89f64b0d57634a79702bd811415b724d61fc9b2365361
-      version: 6.7.6
-  repo: grafana6
-  tags:
-  - 6.7.6-debian9
-  - 6.7-debian9
-  - 6-debian9
-  - 6.7.6
-  - '6.7'
-  - '6'
-  - latest
-- dir: 5/debian9/5.4
-  from: marketplace.gcr.io/google/debian9
-  packages:
-    grafana:
-      sha256: 89c4f576114179617060c977afcf69a71228d9f389bbc89c4913754133c4736f
-      version: 5.4.5
-  repo: grafana5
-  tags:
-  - 5.4.5-debian9
-  - 5.4-debian9
-  - 5-debian9
-  - 5.4.5
-  - '5.4'
-  - '5'
-  - latest
-
