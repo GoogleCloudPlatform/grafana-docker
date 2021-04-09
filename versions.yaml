@@ -1,4 +1,4 @@
-# Copyright 2020 Google LLC
+# Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,19 +16,19 @@
 cloudbuild:
   enable_parallel: false
 versions:
-- dir: 7/debian9/7.4
+- dir: 7/debian9/7.5
   from: marketplace.gcr.io/google/debian9
   packages:
     grafana:
-      sha256: 9fff20effd682f3212e1a8ee21f46cbe535ab7a2f819cb4c36969dc1f9e832f5
-      version: 7.4.5
+      sha256: 2795a3ef4c504f334e4920f5a5ceb1f2ee067a0f819ea6a93b81223e7cb287fe
+      version: 7.5.3
   repo: grafana7
   tags:
-  - 7.4.5-debian9
-  - 7.4-debian9
+  - 7.5.3-debian9
+  - 7.5-debian9
   - 7-debian9
-  - 7.4.5
-  - '7.4'
+  - 7.5.3
+  - '7.5'
   - '7'
   - latest
 - dir: 7/debian9/7.3
