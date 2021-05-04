@@ -16,21 +16,6 @@
 cloudbuild:
   enable_parallel: false
 versions:
-- dir: 7/debian9/7.5
-  from: marketplace.gcr.io/google/debian9
-  packages:
-    grafana:
-      sha256: 2795a3ef4c504f334e4920f5a5ceb1f2ee067a0f819ea6a93b81223e7cb287fe
-      version: 7.5.3
-  repo: grafana7
-  tags:
-  - 7.5.3-debian9
-  - 7.5-debian9
-  - 7-debian9
-  - 7.5.3
-  - '7.5'
-  - '7'
-  - latest
 - dir: 7/debian9/7.4
   from: marketplace.gcr.io/google/debian9
   packages:
@@ -43,3 +28,5 @@ versions:
   - 7.4-debian9
   - 7.4.5
   - '7.4'
+  - '7'
+  - latest
